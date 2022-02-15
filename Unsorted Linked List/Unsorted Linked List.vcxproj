@@ -23,6 +23,7 @@
     <ClInclude Include="UnsortedType.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ItemType.cpp" />
     <ClCompile Include="UnsortedList.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -16,6 +16,15 @@ public:
 	~UnsortedType();
 
 	void InsertItem(ItemType info_);
+	void DeleteItem(int item);
+	void GetNextItem();
+	void Search();
+	void MakeEmpty();
+	bool IsFull();
+	void ResetList();
+	void ComparedTo();
+	void GetLenght();
+	void Union();
 
 private:
 	Node* head;
