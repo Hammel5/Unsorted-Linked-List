@@ -1,16 +1,16 @@
-#include "LUnsorted.h"
+#include "UnsortedType.h"
 
-Lunsorted::Lunsorted()
+UnsortedType::UnsortedType()
 {
 	head = nullptr;
 	loc = nullptr;
 }
 
-Lunsorted::~Lunsorted()
+UnsortedType::~UnsortedType()
 {
 }
 
-void Lunsorted::InsertItem(ItemType info_)
+void UnsortedType::InsertItem(ItemType info_)
 {
 	Node* temp = new Node;
 	temp->info = info_;

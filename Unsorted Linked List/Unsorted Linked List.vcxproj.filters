@@ -18,12 +18,12 @@
     <ClInclude Include="ItemType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LUnsorted.h">
+    <ClInclude Include="UnsortedType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LUnsorted.cpp">
+    <ClCompile Include="UnsortedList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

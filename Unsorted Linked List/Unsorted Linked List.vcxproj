@@ -20,10 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ItemType.h" />
-    <ClInclude Include="LUnsorted.h" />
+    <ClInclude Include="UnsortedType.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LUnsorted.cpp" />
+    <ClCompile Include="UnsortedList.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

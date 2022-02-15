@@ -1,5 +1,5 @@
-#ifndef LUNSORTED_H
-#define LUNSORTED_H
+#ifndef UNSORTEDTYPE_H
+#define UNSORTEDTYPE_H
 
 #include "ItemType.h"
 
@@ -9,11 +9,11 @@ struct Node
 	Node* next;
 };
 
-class Lunsorted
+class UnsortedType
 {
 public:
-	Lunsorted();
-	~Lunsorted();
+	UnsortedType();
+	~UnsortedType();
 
 	void InsertItem(ItemType info_);
 
@@ -22,4 +22,4 @@ private:
 	Node* loc;
 };
 
-#endif // !LUNSORTED_H
+#endif // !UNSORTEDTYPE_H
