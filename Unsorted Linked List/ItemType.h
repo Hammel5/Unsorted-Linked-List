@@ -3,14 +3,14 @@
 #include <fstream>
 using namespace std;
 
-const int MAX_ITEMS = 100;
+const int MAX_ITEMS = 100; // A constant specifying the maximum number of items to be on the list
 
-enum RelationType
+enum RelationType // An enumeration type that consists of LESS, GREATER, EQUAL
 {
 	LESS, GREATER, EQUAL
 };
 
-class ItemType
+class ItemType // A class encapsulating the type of the items in the list.
 {
 public:
 	ItemType();
@@ -20,8 +20,6 @@ public:
 	RelationType ComparedTo(ItemType item);
 
 	int value;
-
-private:
 
 };
 
