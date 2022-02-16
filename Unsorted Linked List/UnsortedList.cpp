@@ -3,7 +3,7 @@
 UnsortedType::UnsortedType()
 {
 	head = nullptr;
-	loc = nullptr;
+	location = nullptr;
 }
 
 UnsortedType::~UnsortedType()
@@ -26,20 +26,33 @@ void UnsortedType::InsertItem(ItemType info_)
 	head = temp;
 }
 
-void UnsortedType::DeleteItem(int item)
+void UnsortedType::DeleteItem(ItemType info_)
 {
-	Node** pStartOrNext, * cur;
-	for (pStartOrNext = &head;
-		(cur = *pStartOrNext);
-		pStartOrNext = &cur->next) {
+	Node** location, * cur;
+	for (location = &head;
+		(cur = *location);
+		location = &cur->next) {
 
-		if (cur->info == item) 
+		if (cur->info.ComparedTo(info_) == EQUAL)
 		{
-			*pStartOrNext = cur->next;
+			*location = cur->next;
 			delete cur;
 			break;
 		}
 	}
+}
+
+void UnsortedType::GetNextItem()
+{
+	if (location == NULL)
+	{
+		location = data;
+	}
+	else
+	{
+		location = location->next;
+	}
+	return location->info;
 }
 
 void UnsortedType::MakeEmpty()

@@ -16,7 +16,7 @@ public:
 	~UnsortedType();
 
 	void InsertItem(ItemType info_);
-	void DeleteItem(int item);
+	void DeleteItem(ItemType info_);
 	void GetNextItem();
 	void Search();
 	void MakeEmpty();
@@ -28,7 +28,7 @@ public:
 
 private:
 	Node* head;
-	Node* loc;
+	Node* location;
 };
 
 #endif // !UNSORTEDTYPE_H
